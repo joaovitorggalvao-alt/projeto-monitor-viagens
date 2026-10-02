@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+/* Ajustes pequenos que complementam o Tailwind */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Evita que o título da seção fique escondido ao navegar pelos links internos */
+section[id] {
+    scroll-margin-top: 1rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
